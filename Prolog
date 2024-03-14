@@ -1,0 +1,38 @@
+% Addition
+add(X, Y, Result) :- 
+    Result is X + Y.
+
+% Subtraction
+subtract(X, Y, Result) :- 
+    Result is X - Y.
+
+% Multiplication
+multiply(X, Y, Result) :- 
+    Result is X * Y.
+
+% Division
+divide(X, Y, Result) :- 
+    Y =\= 0,
+    Result is X / Y.
+
+% Modulo
+modulo(X, Y, Result) :- 
+    Y =\= 0,
+    Result is X mod Y.
+
+#prediction
+
+?- add(5, 3, Sum).
+Sum = 8.
+
+?- subtract(10, 4, Difference).
+Difference = 6.
+
+?- multiply(6, 7, Product).
+Product = 42.
+
+?- divide(20, 5, Quotient).
+Quotient = 4.
+
+?- modulo(17, 5, Remainder).
+Remainder = 2.
